@@ -4,11 +4,11 @@ A React & EsLint boilerplate entirely configured to suit my standards.
 Summary
 -------
 You can find here a list of the main features of this boilerplate:
+- [TailwindCSS](https://tailwindcss.com/) support.
 - [TypeScript](https://www.typescriptlang.org/) support.
-- [React](https://reactjs.org/) support.
 - [EsLint](https://eslint.org/) support (already configured).
 - [Craco](https://craco.js.org/) support (already configured).
-- [TailwindCSS](https://tailwindcss.com/) support.
+- [React](https://reactjs.org/) support.
 
 Here's the list of the main EsLint rules:
 - **[ERROR]** UNIX linebreaks.
