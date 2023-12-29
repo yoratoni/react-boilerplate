@@ -1,7 +1,12 @@
 export default function Home() {
     return (
-        <div>
-            <h1 className="text-3xl bg-red-500">Home</h1>
+        <div className="flex items-center justify-center w-full h-full">
+            <h1 className="text-6xl text-white leading-[40px] text-center">
+                React Boilerplate<br />
+                <span className="text-2xl">
+                    by Yoratoni
+                </span>
+            </h1>
         </div>
     );
 }

@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 
 export default function App() {
     return (
-        <div>
+        <div className="w-full h-screen min-h-screen bg-neutral-900">
             <Home />
         </div>
     );

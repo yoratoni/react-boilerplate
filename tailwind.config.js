@@ -29,6 +29,12 @@ module.exports = {
                 },
                 { values: theme("textShadow") }
             );
+        }),
+        // Adding child & child-hover variants
+        plugin(function({ addVariant, e }) {
+            addVariant("child", ({ modifySelectors, separator }) => {
+                modifySelectors(({ className }) => `.${ e(`child${ separator }${ className }`) } > *`);
+            });
         })
     ]
 };

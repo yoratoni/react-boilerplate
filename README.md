@@ -22,3 +22,4 @@ Notes:
 - The default `index.js` entry file has been replaced by `_document.tsx` file. Making
 it similar to Next.js.
 - TailwindCSS lack of text shadow support has been fixed by adding custom ones.
+- `child:` variant has been added to TailwindCSS.
