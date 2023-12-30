@@ -20,7 +20,7 @@ module.exports = {
     },
     plugins: [
         // Adding text shadow utilities
-        plugin(function({ matchUtilities, theme }) {
+        plugin(({ matchUtilities, theme }) => {
             matchUtilities(
                 {
                     "text-shadow": (value) => ({
@@ -30,11 +30,12 @@ module.exports = {
                 { values: theme("textShadow") }
             );
         }),
-        // Adding child & child-hover variants
-        plugin(function({ addVariant, e }) {
-            addVariant("child", ({ modifySelectors, separator }) => {
-                modifySelectors(({ className }) => `.${ e(`child${ separator }${ className }`) } > *`);
-            });
+        // Adding child variants
+        plugin(({ addVariant }) => {
+            addVariant("child", "& > *");
+            addVariant("child-hover", "& > *:hover");
+            addVariant("child-focus", "& > *:focus");
+            addVariant("child-active", "& > *:active");
         })
     ]
 };
