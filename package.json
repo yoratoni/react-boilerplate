@@ -1,6 +1,10 @@
 {
     "name": "react-boilerplate",
     "version": "1.0.0",
+    "description": "React Boilerplate",
+    "repository": "https://github.com/yoratoni/react-boilerplate",
+    "author": "yoratoni <yoratoni.dev@gmail.com>",
+    "license": "MIT",
     "private": true,
     "dependencies": {
         "react": "^18.2.0",
