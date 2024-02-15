@@ -1,7 +1,7 @@
 {
     "name": "react-boilerplate",
     "version": "1.0.0",
-    "description": "React Boilerplate",
+    "description": "A React & EsLint boilerplate entirely configured to suit my standards.",
     "repository": "https://github.com/yoratoni/react-boilerplate",
     "author": "yoratoni <yoratoni.dev@gmail.com>",
     "license": "MIT",
