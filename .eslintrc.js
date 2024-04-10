@@ -51,13 +51,19 @@ module.exports = {
         "@typescript-eslint/indent": ["warn", 4, { "SwitchCase": 1 }],
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-explicit-any": "off",
 
         // React
-
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-uses-react": "off",
+        "react/button-has-type": "warn",
+        "react/jsx-indent": ["warn", 4],
+        "react/jsx-indent-props": ["warn", 4],
+        "react/jsx-one-expression-per-line": "off",
 
         // Imports
         "import/no-useless-path-segments": ["warn", { noUselessIndex: true }],
-        "import/newline-after-import": ["warn", { count: 2 }],
+        "import/newline-after-import": ["warn", { count: 2, considerComments: true }],
         "sort-imports": [
             "warn",
             {
