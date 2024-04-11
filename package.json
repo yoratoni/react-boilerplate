@@ -1,15 +1,25 @@
 {
     "name": "react-boilerplate",
+    "productName": "React Boilerplate",
     "version": "1.0.0",
     "description": "A React & EsLint boilerplate entirely configured to suit my standards.",
     "repository": "https://github.com/yoratoni/react-boilerplate",
     "author": "yoratoni <yoratoni.dev@gmail.com>",
     "license": "MIT",
     "private": true,
+    "scripts": {
+        "v-bump": "yarn version --patch",
+        "dev": "craco start",
+        "build": "craco build",
+        "lint": "eslint . --ext .ts,.tsx",
+        "lint:fix": "eslint . --ext .ts,.tsx --fix",
+        "check-types": "tsc --noEmit --skipLibCheck --incremental false"
+    },
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-scripts": "5.0.1"
+        "react-scripts": "5.0.1",
+        "tailwindcss-animate": "^1.0.7"
     },
     "devDependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -28,11 +38,6 @@
         "tailwindcss": "^3.3.6",
         "tsconfig-paths": "^4.2.0",
         "typescript": "^5.3.3"
-    },
-    "scripts": {
-        "dev": "craco start",
-        "build": "craco build",
-        "lint": "eslint --ext .ts,.tsx src"
     },
     "browserslist": {
         "production": [
